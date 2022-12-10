@@ -15,10 +15,13 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class VirtualNode {
+
     @Id
     @GenericGenerator(name = "vnode_id", strategy = "com.facets.cloud.assignment.Util.UniqueIdGenerator")
     @GeneratedValue(generator = "vnode_id")
     String id;
+
+    String nodeName;
 
     @Enumerated(value = EnumType.STRING)
     VirtualNodeStatus status;

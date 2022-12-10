@@ -24,11 +24,11 @@ public class VirtualNodeListConverter implements AttributeConverter<List<Virtual
 
     @Override
     public List<VirtualNode> convertToEntityAttribute(String dbData) {
-        if(dbData == null || dbData.equals("{}")){
+        if(dbData == null || dbData.equals("{}") || dbData.equals("\"null\"")){
             return null;
         }
         try{
-            return FacetsCloudUtils.objectMapper().readValue(dbData, new TypeReference<List<VirtualNode>>(){});
+            return FacetsCloudUtils.objectMapper().readValue(dbData, new TypeReference<>() {});
         }catch (Exception e){
             String errorMessage = "Exception occurred while converting db column to object.";
             log.error("Unexpected exception occurred: " + errorMessage);

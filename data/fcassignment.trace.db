@@ -66,3 +66,21 @@ SELECT * FROM INFORMATION_SCHEMA.CONSTANTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_
 2022-12-10 10:50:11 jdbc[13]: exception
 org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "SELECT * FROM INFORMATION_SCHEMA.CONSTANTS INFORMATION_SCHEMA[*].CONSTRAINT_COLUMN_USAGE INFORMATION_SCHEMA.ELEMENT_TYPES INFORMATION_SCHEMA.ENUM_VALUES INFORMATION_SCHEMA.USERS"; SQL statement:
 SELECT * FROM INFORMATION_SCHEMA.CONSTANTS INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE INFORMATION_SCHEMA.ELEMENT_TYPES INFORMATION_SCHEMA.ENUM_VALUES INFORMATION_SCHEMA.USERS [42000-214]
+2022-12-10 11:16:13 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VIRTUAL_NODES" not found (this database is empty); SQL statement:
+SELECT * FROM virtual_nodes [42104-214]
+2022-12-10 11:40:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VIRTUAL_NODE" not found (this database is empty); SQL statement:
+select virtualnod0_.id as id1_1_, virtualnod0_.child_virtual_node_list as child_vi2_1_, virtualnod0_.connection_group_id as connecti5_1_, virtualnod0_.node_name as node_nam3_1_, virtualnod0_.status as status4_1_ from virtual_node virtualnod0_ where virtualnod0_.node_name=? [42104-214]
+2022-12-10 11:43:43 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VIRTUAL_NODE" not found (this database is empty); SQL statement:
+select virtualnod0_.id as id1_1_, virtualnod0_.child_virtual_node_list as child_vi2_1_, virtualnod0_.connection_group_id as connecti5_1_, virtualnod0_.node_name as node_nam3_1_, virtualnod0_.status as status4_1_ from virtual_node virtualnod0_ where virtualnod0_.node_name=? [42104-214]
+2022-12-10 11:45:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VIRTUAL_NODE" not found (this database is empty); SQL statement:
+select virtualnod0_.id as id1_1_, virtualnod0_.child_virtual_node_list as child_vi2_1_, virtualnod0_.connection_group_id as connecti5_1_, virtualnod0_.node_name as node_nam3_1_, virtualnod0_.status as status4_1_ from virtual_node virtualnod0_ where virtualnod0_.node_name=? [42104-214]
+2022-12-10 11:48:55 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VIRTUAL_NODE" not found (this database is empty); SQL statement:
+select virtualnod0_.id as id1_1_, virtualnod0_.child_virtual_node_list as child_vi2_1_, virtualnod0_.connection_group_id as connecti5_1_, virtualnod0_.node_name as node_nam3_1_, virtualnod0_.status as status4_1_ from virtual_node virtualnod0_ where virtualnod0_.node_name=? [42104-214]
+2022-12-10 11:50:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "VIRTUAL_NODE" not found (this database is empty); SQL statement:
+select virtualnod0_.id as id1_1_, virtualnod0_.child_virtual_node_list as child_vi2_1_, virtualnod0_.connection_group_id as connecti5_1_, virtualnod0_.node_name as node_nam3_1_, virtualnod0_.status as status4_1_ from virtual_node virtualnod0_ where virtualnod0_.node_name=? [42104-214]
