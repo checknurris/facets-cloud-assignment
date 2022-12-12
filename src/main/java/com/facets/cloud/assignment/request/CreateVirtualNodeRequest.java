@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 
 public class CreateVirtualNodeRequest {
     @NotNull
-    @Size(min = 3, max = 6)
-    @Pattern(regexp = "^[\\w]*\\$", message = "No spaces or special characters allowed in node name.")
+    @Size(min = 3, max = 14)
+    @Pattern(regexp = "[\\w]*", message = "No spaces or special characters allowed in node name.")
     public String nodeName;
 }
